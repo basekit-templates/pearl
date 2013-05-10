@@ -1,0 +1,76 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+ <header>
+    <div class="wrapper clearfix">
+       {{widget('companyheader', 'companyheader', {"defaultlogo": asset('images/logo.png')})|raw}}
+       {{widget('extendednavigation', 'navigationheader', {})|raw}}
+    </div>
+</header>
+
+<section>
+    {{widget('feature', 'featurehome', {"header": "Point of interest marketing.", "strapline":"Ut urna ipsum pulvinar vitae sagittis in placerat ac nulla.", "buttonText":"LORE IPSU", "bgImg": asset('images/feature-bg.jpg')})|raw}}
+</section>
+
+<section>
+    <div class="wrapper clearfix">
+        <div class="widget responsivecolumns columns-two-50-50 columns-three-33-34-33">
+            <div class="column columns-three-left">
+                {{widget('content', 'footercolumn1', {"content":"<h3>Lorem &amp; Ipsodium</h3><p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor nunc vellain livamus.</p><p><a>Lorem ipsum.</a></p>"})|raw}}
+            </div>
+            <div class="column columns-three-middle">
+                {{widget('content', 'footercolumn1', {"content":"<h3>Lorem &amp; Ipsodium</h3><p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor nunc vellain livamus.</p><p><a>Lorem ipsum.</a></p>"})|raw}}
+            </div>
+            <div class="column columns-three-right">
+                {{widget('content', 'footercolumn1', {"content":"<h3>Lorem &amp; Ipsodium</h3><p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor nunc vellain livamus.</p><p><a>Lorem ipsum.</a></p>"})|raw}}
+            </div>
+        </div>
+
+        {{zone('main')|raw}}
+
+    </div>
+</section>
+
+<section class="bottom-bar">
+    <div class="wrapper clearfix">
+        <div class="widget responsivecolumns columns-two-50-50">
+            <div class="column columns-two-left">
+                {{widget('content', 'footercolumn1', {"content":"<h2>Aliquam sodales urna lipsum.</h2><p>Ut urna ipsum pulvinar vitae sagittis in placerat ac nulla.</p>"})|raw}}
+            </div>
+            <div class="column columns-two-right">
+                {{widget('content', 'footercolumn1', {"content":"<h2>Consectetur adipiscing elit.</h2><p>Aliquam sodales urna non odio egestas tempor alam ipsum so.</p>"})|raw}}
+            </div>
+        </div>
+    </div>
+</section>  
+
+<footer>
+    <div class="wrapper clearfix">
+        <div class="widget responsivecolumns columns-two-50-50 columns-three-33-34-33">
+           <div class="column columns-three-left">
+                {{widget('content', 'footercolumn1', {"content":"<h3>Lorem &amp; Ipsodium</h3><p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor nunc vellain livamus.</p><p><a>Lorem ipsum.</a></p>"})|raw}}
+           </div>
+           <div class="column columns-three-second">
+                {{widget('content', 'footercolumn2', {"content":"<h3>Lorem &amp; Ipsodium</h3><p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor nunc vellain livamus.</p><p><a>Lorem ipsum.</a></p>"})|raw}}
+           </div>
+           <div class="column columns-three-third">
+                {{widget('content', 'footercolumn3', {"content":"<h3>Lorem &amp; Ipsodium</h3><p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor nunc vellain livamus.</p><p><a>Lorem ipsum.</a></p>"})|raw}}
+           </div>
+        </div>
+    </div>
+    <section class="footer2">
+        <div class="wrapper clearfix">
+            <div class="widget responsivecolumns columns-two-50-50">
+                <div class="column columns-two-left">
+                    {{widget('content', 'footercolumn1', {"content":"<p>Uvitae sagittis © 2013. Placerat ac Nulla.</p>"})|raw}}
+                </div>
+                <div class="column columns-two-right">
+                    {{widget('content', 'footercolumn1', {"content":"<p>Lorem ipsum dolor sit amet consectetur.</p>})|raw}}
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+{% endblock %}

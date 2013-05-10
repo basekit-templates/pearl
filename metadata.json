@@ -1,0 +1,8 @@
+{
+	"name":"Pearl",
+	"thumbnail":"pearl.jpg",
+	"screenshot":"pearl.jpg",
+	"pageTypes":["about"],
+	"defaultColorSwatch":"Bright 2",
+	"defaultFontSwatch":"Arvo"
+}
