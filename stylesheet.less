@@ -695,44 +695,33 @@ footer section.footer2 .widget.responsivecolumns .columns-two-right {
 /* FEATURE */
 
 .widget.feature {
+  width: 100%;
   margin-bottom: 0em;
-}
-
-.widget.feature .widget.responsivecolumns {
-  margin-top: 0;
-  margin-bottom: 0;
+  height: 539px!important;
 }
 
 .widget.feature .content {
-    margin-top: -5px;
     width: 100%;
+    position: absolute!important;
+    bottom: 0;
+    background: hsla(hue(@color-swatch2), saturation(@color-swatch2), lightness(@color-swatch2), 0.8);  
+    padding: 1.8em 0;
 }
 
-.widget.feature .bgimage {
-  position: relative!important;
-}
-
-.widget.feature .content .strip {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background: hsla(hue(@color-swatch2), saturation(@color-swatch2), lightness(@color-swatch2), 0.8);  
-  padding: 1.8em 0;
-}
-
-.widget.feature {
-    width: 100%;
+.widget.feature .content .spare {
+  display: block;
+  margin: 0 auto;
+  max-width: 960px;
 }
 
 .widget.feature h2 {
-  float: left;
   color: @color-swatch4;
   letter-spacing: -1px;
   font-size: 2.3em;
   padding-bottom: 6px;
 }
+
 .widget.feature h3 {
-  float: left;
   color: lighten(@color-swatch5,20%);
   letter-spacing: 0;
   font-size: 1em;
@@ -741,9 +730,8 @@ footer section.footer2 .widget.responsivecolumns .columns-two-right {
 
 .widget.feature button
 {
-  float: right;
   padding: 1.2em 2em;
-  margin: 1em 0 1em;
+  margin: 3em 0 1em;
   -webkit-border-radius: 3px;
      -moz-border-radius: 3px;
           border-radius: 3px;
