@@ -31,7 +31,7 @@ h1 {
   font-family:@font-swatch1-font-family;
   font-size: 28px;
   font-weight:@font-swatch1-font-weight;
-  color:@font-swatch1-color;
+  color: @color-swatch1;
   letter-spacing: @font-swatch1-letter-spacing;
   margin: 0;
   padding: 0;
@@ -105,6 +105,10 @@ blockquote {
 }
 
 /* CUSTOM CSS */
+
+.main {
+  padding: 0px 0 60px;
+}
 
 section.bottom-bar {
   width: 100%;
@@ -641,10 +645,11 @@ footer section.footer2 .widget.responsivecolumns .columns-two-right {
   color: @color-swatch3;
 }
 
-.widget.extendednavigation ul li a, .widget.extendednavigation ul li .text {
+.widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
   display: block;
   padding: 1em 2em;
   font-family: @font-swatch6-font-family;
+  font-size: @font-swatch6-font-size;
   color: darken(@color-swatch5,10%);
 }
 .widget.extendednavigation ul li a:hover {
@@ -652,7 +657,7 @@ footer section.footer2 .widget.responsivecolumns .columns-two-right {
 }
 
 .widget.extendednavigation ul li.folder {
-  background-image: url('../images/arrow-down.png');
+  background-image: image('/pearl/images/arrow-down.png');
   background-position: right center;
   background-repeat: no-repeat;
   height: 100%;
@@ -687,7 +692,9 @@ footer section.footer2 .widget.responsivecolumns .columns-two-right {
   display: block;
   background-image: none;
   color: @color-swatch5;
+  padding: 0;
 }
+
 .widget.extendednavigation li:hover > ul > li > a:hover {
   color: @color-swatch3;
 }
