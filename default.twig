@@ -38,10 +38,10 @@
     <div class="wrapper clearfix">
         <div class="widget responsivecolumns columns-two-50-50">
             <div class="column columns-two-left">
-                {{widget('content', 'footercolumn1', {"content":"<h2>Aliquam sodales urna lipsum.</h2><p>Ut urna ipsum pulvinar vitae sagittis in placerat ac nulla.</p>"})|raw}}
+                {{widget('content', 'middlecontent1', {"content":"<h2>Aliquam sodales urna lipsum.</h2><p>Ut urna ipsum pulvinar vitae sagittis in placerat ac nulla.</p>"})|raw}}
             </div>
             <div class="column columns-two-right">
-                {{widget('content', 'footercolumn2', {"content":"<h2>Consectetur adipiscing elit.</h2><p>Aliquam sodales urna non odio egestas tempor alam ipsum so.</p>"})|raw}}
+                {{widget('content', 'middlecontent2', {"content":"<h2>Consectetur adipiscing elit.</h2><p>Aliquam sodales urna non odio egestas tempor alam ipsum so.</p>"})|raw}}
             </div>
         </div>
     </div>
@@ -57,7 +57,8 @@
                 {{widget('content', 'footercolumn2', {"content":"<h3>Lorem &amp; Ipsodium</h3><p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor nunc vellain livamus.</p><p><a>Lorem ipsum.</a></p>"})|raw}}
            </div>
            <div class="column columns-three-third">
-                {{widget('content', 'footercolumn3', {"content":"<h3>Lorem &amp; Ipsodium</h3><p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor nunc vellain livamus.</p><p><a>Lorem ipsum.</a></p>"})|raw}}
+                {{widget('content', 'footercolumn3', {"content":"<h3>Lorem &amp; Ipsodium</h3>"})|raw}}
+                {{widget('companyaddress', 'companyaddressfooter', {})|raw}}    
            </div>
         </div>
     </div>
