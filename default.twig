@@ -13,39 +13,9 @@
     {{widget('feature', 'featurehome', {"header": "Point of interest marketing.", "strapline":"Ut urna ipsum pulvinar vitae sagittis in placerat ac nulla.", "buttonText":"LORE IPSUM", "bgImg": asset('images/feature-bg.jpg')})|raw}}
 </section>
 
-<section>
-    <div class="wrapper clearfix">
-        <div class="widget responsivecolumns columns-three-33-34-33">
-            <div class="column columns-three-left">
-                {{widget('content', 'introcolumn1', {"content":"<h3>Lorem &amp; Ipsodium</h3><p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor nunc vellain livamus.</p><p><a>Lorem ipsum.</a></p>"})|raw}}
-            </div>
-            <div class="column columns-three-middle">
-                {{widget('content', 'introcolumn2', {"content":"<h3>Lorem &amp; Ipsodium</h3><p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor nunc vellain livamus.</p><p><a>Lorem ipsum.</a></p>"})|raw}}
-            </div>
-            <div class="column columns-three-right">
-                {{widget('content', 'introcolumn3', {"content":"<h3>Lorem &amp; Ipsodium</h3><p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor nunc vellain livamus.</p><p><a>Lorem ipsum.</a></p>"})|raw}}
-            </div>
-        </div>
-
-        <div class="main">
-            {{zone('main')|raw}}
-        </div>
-
-    </div>
-</section>
-
-<section class="bottom-bar">
-    <div class="wrapper clearfix">
-        <div class="widget responsivecolumns columns-two-50-50">
-            <div class="column columns-two-left">
-                {{widget('content', 'bottomcontent1', {"content":"<h2>Aliquam sodales urna lipsum.</h2><p>Ut urna ipsum pulvinar vitae sagittis in placerat ac nulla.</p>"})|raw}}
-            </div>
-            <div class="column columns-two-right">
-                {{widget('content', 'bottomcontent2', {"content":"<h2>Consectetur adipiscing elit.</h2><p>Aliquam sodales urna non odio egestas tempor alam ipsum so.</p>"})|raw}}
-            </div>
-        </div>
-    </div>
-</section>  
+<div class="main">
+    {{zone('main')|raw}}
+</div>
 
 <footer>
     <div class="wrapper clearfix">
@@ -58,7 +28,6 @@
            </div>
            <div class="column columns-three-right">
                 {{widget('content', 'footercolumn3', {"content":"<h3>Lorem &amp; Ipsodium</h3>"})|raw}}
-                {{widget('companyaddress', 'companyaddressfooter', {})|raw}}    
            </div>
         </div>
     </div>
