@@ -19,30 +19,15 @@
 
 <footer>
     <div class="wrapper clearfix">
-        <div class="widget responsivecolumns columns-three-33-34-33">
-           <div class="column columns-three-left">
-                {{widget('content', 'footercolumn1', {"content":"<h3>Lorem &amp; Ipsodium</h3><p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor nunc vellain livamus.</p><p><a>Lorem ipsum.</a></p>"})|raw}}
-           </div>
-           <div class="column columns-three-middle">
-                {{widget('content', 'footercolumn2', {"content":"<h3>Lorem &amp; Ipsodium</h3><p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Aliquam sodales urna non odio egestas tempor nunc vellain livamus.</p><p><a>Lorem ipsum.</a></p>"})|raw}}
-           </div>
-           <div class="column columns-three-right">
-                {{widget('content', 'footercolumn3', {"content":"<h3>Lorem &amp; Ipsodium</h3>"})|raw}}
-           </div>
-        </div>
-    </div>
-    <section class="footer2">
-        <div class="wrapper clearfix">
-            <div class="widget responsivecolumns columns-two-50-50">
-                <div class="column columns-two-left">
-                    {{widget('content', 'footer2column1', {"content":"<p>Uvitae sagittis © 2013. Placerat ac Nulla.</p>"})|raw}}
-                </div>
-                <div class="column columns-two-right">
-                    {{widget('content', 'footer2column2', {"content":'<p style="text-align: right;">Lorem ipsum dolor sit amet consectetur.</p>'})|raw}}
-                </div>
+        <div class="responsivecolumns columns-two-50-50">
+            <div class="column columns-two-left">
+                {{widget('content', 'footercolumn1', {"content":"<h2>Lorem Ip Soda</h2><p>Integer a Tortor Dui. Nullam nec ante mi. Morbi sodales urna sit amet mauris elementum quis rutrum lacus gravida. Proin feugia libero quis.</p>"})|raw}}
+            </div>
+            <div class="column columns-two-right">
+                {{widget('socialicons', 'socialicons', {'googleplus': 'https://plus.google.com/101946323226233111530', 'linkedin':'http://www.linkedin.com/company/basekit', 'facebook': 'https://www.facebook.com/TeamBaseKit', 'twitter': 'https://twitter.com/basekit', 'youtube': 'https://www.youtube.com/user/TeamBaseKit', 'rss': 'http://blogdiseno.basekit.es/feed/'})|raw}}
             </div>
         </div>
-    </section>
+    </div>
 </footer>
 
 {% endblock %}
