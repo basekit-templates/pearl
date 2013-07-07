@@ -2,7 +2,7 @@
 	"name":"Pearl",
 	"thumbnail":"pearl.jpg",
 	"screenshot":"pearl.jpg",
-	"pageTypes":["about"],
+	"pageTypes":["home"],
 	"defaultColorSwatch":"Colorful 1",
 	"defaultFontSwatch":"Montserrat"
 }
