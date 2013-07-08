@@ -120,8 +120,8 @@ header {
 }
 
 .widget.companyheader .company-name h1 {
-  font-size:scale(@font-swatch1-font-size, 0.6); /* 21.6px  */
-  line-height:scale(@font-swatch1-line-height, 0.8); /* 28.8px  */
+  font-size:bkscale(@font-swatch1-font-size, 0.6); /* 21.6px  */
+  line-height:bkscale(@font-swatch1-line-height, 0.8); /* 28.8px  */
   margin: 0;
   padding: 0;
 }
@@ -181,7 +181,7 @@ footer {
 
 footer h2 {
   color: @color-swatch1;
-  font-size:scale(@font-swatch2-font-size, 0.9);
+  font-size:bkscale(@font-swatch2-font-size, 0.9);
   padding-bottom: 20px;
 }
 
@@ -289,7 +289,7 @@ footer span {
   display: block;
   padding: 0;
   font-family:@font-swatch6-font-family;
-  font-size:scale(@font-swatch6-font-size, 1.2); /* 12.6px  */
+  font-size:bkscale(@font-swatch6-font-size, 1.2); /* 12.6px  */
   font-weight: @font-swatch6-font-weight;
   color: @font-swatch6-color;
   line-height:@font-swatch6-line-height;
@@ -409,7 +409,7 @@ footer span {
 
 .widget.feature h2 {
   font-family:@font-swatch8-font-family;
-  font-size:scale(@font-swatch8-font-size, 0.8); /* 40px  */
+  font-size:bkscale(@font-swatch8-font-size, 0.8); /* 40px  */
   font-weight: @font-swatch8-font-weight;
   line-height:@font-swatch8-line-height;
   color: @font-swatch8-color;
@@ -420,9 +420,9 @@ footer span {
 
 .widget.feature h3 {
   font-family:@font-swatch9-font-family;
-  font-size:scale(@font-swatch9-font-size, 0.6); /* 35px  */
+  font-size:bkscale(@font-swatch9-font-size, 0.6); /* 35px  */
   font-weight: @font-swatch9-font-weight;
-  line-height:scale(@font-swatch9-line-height, 0.55);
+  line-height:bkscale(@font-swatch9-line-height, 0.55);
   color: @font-swatch9-color;
   letter-spacing: 1px;
   /*letter-spacing: @font-swatch9-letter-spacing;*/
@@ -633,6 +633,16 @@ footer span {
     background-color: darken(@color-swatch3,5%);
 }
 
+@media only screen and (min-width: 768px) {
+    .widget.content .bk-content-text {
+        overflow: visible!important;
+        height: auto!important;
+    }
+    .widget.content span.expand {
+        display:none!important;
+    }
+}
+
 /* ===============================
    IMAGE WIDGET
    =============================== */
@@ -678,10 +688,8 @@ footer span {
 .widget.gallery ul {
     display:block;
     margin: 0;
-    padding:10px;
+    padding:0px;
     list-style: none;
-    background-color: lighten(@color-swatch2,50%);
-    border-radius:5px;
 }
 
 .widget.gallery li {
@@ -714,10 +722,10 @@ footer span {
 
 .widget.gallery li span.inner {
     position: absolute;
-    left: 10px;
-    right: 10px;
-    top: 10px;
-    bottom: 10px;
+    left: 5px;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
     overflow: hidden;
 }
 
@@ -962,7 +970,7 @@ hr.line.align-right {
     width: 100%;
     float: left;
     font-family:@font-swatch4-font-family;
-    font-size:scale(@font-swatch4-font-size, 0.8);
+    font-size:bkscale(@font-swatch4-font-size, 0.8);
     font-weight:@font-swatch4-font-weight;
     line-height:@font-swatch4-line-height;
     color:@font-swatch4-color;
@@ -1234,7 +1242,7 @@ hr.line.align-right {
 @media only screen and (max-width: 768px) {
 
   header {
-    padding: 22px 0;
+    padding: 5px 0;
     border-bottom: 0;
   }
 
@@ -1250,7 +1258,7 @@ hr.line.align-right {
   }
 
   .widget.companyheader .company-name h1 {
-    font-size:scale(@font-swatch1-font-size, 0.8);
+    font-size:bkscale(@font-swatch1-font-size, 0.8);
   }
 
   .widget.companyheader .logo {
@@ -1361,8 +1369,8 @@ hr.line.align-right {
   }
 
   .widget.feature h2 {
-    font-size:scale(@font-swatch8-font-size, 0.5); /* 25px */
-    line-height:scale(@font-swatch8-line-height, 0.8); /* 40px */
+    font-size:bkscale(@font-swatch8-font-size, 0.5); /* 25px */
+    line-height:bkscale(@font-swatch8-line-height, 0.8); /* 40px */
   }
 
   .widget.feature h2 span {
@@ -1370,8 +1378,8 @@ hr.line.align-right {
   }
 
   .widget.feature h3 {
-    font-size:scale(@font-swatch9-font-size, 0.6); /* 40px */
-    line-height:scale(@font-swatch9-line-height, 0.8); /* 40px */
+    font-size:bkscale(@font-swatch9-font-size, 0.6); /* 40px */
+    line-height:bkscale(@font-swatch9-line-height, 0.8); /* 40px */
   }
 
   .widget.feature .feature-btn button {
@@ -1403,13 +1411,13 @@ hr.line.align-right {
 @media only screen and (max-width: 480px) {
 
   .main {
-    padding:5px;
+    padding:5px 0px;
   }
 
   /* COMPANY HEADER */
 
   .widget.companyheader .company-name h1 {
-    font-size:scale(@font-swatch1-font-size, 0.6)
+    font-size:bkscale(@font-swatch1-font-size, 0.6)
   }
 
   /* NAV */
@@ -1514,8 +1522,8 @@ hr.line.align-right {
   }
 
   .widget.feature h2 {
-    font-size:scale(@font-swatch8-font-size, 0.4); /* 20px */
-    line-height:scale(@font-swatch8-line-height, 0.5); /* 30px */
+    font-size:bkscale(@font-swatch8-font-size, 0.4); /* 20px */
+    line-height:bkscale(@font-swatch8-line-height, 0.5); /* 30px */
   }
 
   .widget.feature h3 {
@@ -1620,4 +1628,115 @@ hr.line.align-right {
 }
 .clearfix {
   *zoom: 1;
+}
+
+#featuregallery .widget.gallery  .gallery-widget {
+	list-style: none;
+	margin: 30px auto;
+	padding: 0;
+}
+
+#featuregallery .widget.gallery ul {
+    background-color:transparent;
+}
+
+#featuregallery .widget.gallery .gallery-widget li {
+	display: block;
+	float: left;
+	width: 31.3%;
+    padding:1%;
+	opacity: 0;
+}
+
+#featuregallery .widget.gallery .title,
+#featuregallery .widget.gallery .d/escription {
+    display:none;
+}
+
+#featuregallery .widget.gallery li span.inner {
+    position: static;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    overflow:visible;
+    background:none!important;
+}
+
+#featuregallery .widget.gallery li span.inner img  {
+    display:inline;
+}
+
+#featuregallery .widget.gallery .gallery-widget li.shown,
+.no-js #featuregallery .widget.gallery  .gallery-widget li,
+.no-cssanimations #featuregallery .gallery-widget li {
+	opacity: 1;
+}
+
+#featuregallery .widget.gallery .gallery-widget li img {
+	outline: none;
+	border: none;
+	display: block;
+	max-width: 100%;
+}
+
+/* Effect 2: Move Up */
+#featuregallery .widget.gallery  .gallery-widget li.animate {
+	-webkit-transform: translateY(200px);
+	-moz-transform: translateY(200px);
+	transform: translateY(200px);
+	-webkit-animation: moveUp 0.65s ease forwards;
+	-moz-animation: moveUp 0.65s ease forwards;
+	animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+	to { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@-moz-keyframes moveUp {
+	to { -moz-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+	to { transform: translateY(0); opacity: 1; }
+}
+
+@media screen and (max-width: 900px) {
+	#featuregallery .widget.gallery  .gallery-widget li {
+		width: 47.5%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	#featuregallery .widget.gallery .gallery-widget li {
+		width: 96%;
+	}
+}
+
+/* Animation for isotope moves */
+.isotope,
+.isotope .isotope-item {
+  /* change duration value to whatever you like */
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
 }
