@@ -1149,13 +1149,15 @@ hr.line.align-right {
 
 .widget.responsiveslideshow .slideshow-widget .btn-prev, .widget.responsiveslideshow .slideshow-widget .btn-next
 {
-  display: none;
   position: absolute;
   width: 14%;
   height: 14%; 
   font-size: 0;
   z-index: 11;
   text-indent: -99999px;  
+  top: 43%;
+  display: block;
+  cursor: pointer;
 }
 
 .widget.responsiveslideshow .slideshow-widget .btn-prev
@@ -1169,14 +1171,7 @@ hr.line.align-right {
 {
   right: 10px;
   background: image('/images/slideshow-arrow-right.png') no-repeat center right; 
-    background-size: contain;   
-}
-
-.widget.responsiveslideshow .slideshow-widget:hover .btn-prev, .widget.responsiveslideshow .slideshow-widget:hover .btn-next
-{
-  top: 43%;
-  display: block;
-  cursor: pointer;
+  background-size: contain;   
 }
 
 .widget.responsiveslideshow .slideshow-widget-controls
