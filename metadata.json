@@ -1,7 +1,7 @@
 {
 	"name":"Pearl",
-	"thumbnail":"pearl.jpg",
-	"screenshot":"pearl.jpg",
+	"thumbnail":"pearl.png",
+	"screenshot":"pearl.png",
 	"pageTypes":["home"],
 	"defaultColorSwatch":"Colorful 1",
 	"defaultFontSwatch":"Montserrat"
