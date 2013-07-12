@@ -705,7 +705,7 @@ footer span {
     background-color: @color-swatch1;
 }
 
-.widget.gallery ul li.square span.inner
+.widget.gallery ul li.one-to-one span.inner
 {
     background-size:100% 100%;
 }
@@ -1146,89 +1146,105 @@ hr.line.align-right {
 /* ===============================
    SLIDESHOW WIDGET
    =============================== */
-
-.widget.responsiveslideshow .slideshow-widget .btn-prev, .widget.responsiveslideshow .slideshow-widget .btn-next
-{
-  position: absolute;
-  width: 14%;
-  height: 14%; 
-  font-size: 0;
-  z-index: 11;
-  text-indent: -99999px;  
-  top: 43%;
-  display: block;
-  cursor: pointer;
+.widget.responsiveslideshow .slideshow-image-list {
+    height: 300px;
 }
 
-.widget.responsiveslideshow .slideshow-widget .btn-prev
-{
+.widget.responsiveslideshow .slideshow-widget {
+    background-color: lighten(@color-swatch5,17%);
+}
+.widget.responsiveslideshow span.inner img {
+    width:auto;
+    height:100%;
+}
+
+.widget.responsiveslideshow .image-wrapper {
+    padding:15px;
+}
+
+.widget.responsiveslideshow .crop .image-wrapper {
+    padding:0;
+}
+
+.widget.responsiveslideshow .content-wrapper {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:auto;
+    background-color: hsla(hue(@color-swatch2), saturation(@color-swatch2), lightness(lighten(@color-swatch4,10%)), 1); 
+}
+
+.widget.responsiveslideshow .title {
+    display: inline-block;
+    padding:5px 20px 0 20px;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height:bkscale(@font-swatch5-line-height, 0.55);
+    color: @color-swatch1;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+
+.widget.responsiveslideshow .description {
+    display: block;
+    padding: 6px 20px;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height:bkscale(@font-swatch5-line-height, 0.55);
+    color: @color-swatch1;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev, 
+.widget.responsiveslideshow .slideshow-widget .btn-next {
+    font-size: 0;
+    z-index: 11;
+    text-indent: -99999px;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev {
   left: 10px;
   background: image('/images/slideshow-arrow-left.png') no-repeat center left;
   background-size: contain;
 }
 
-.widget.responsiveslideshow .slideshow-widget .btn-next
-{
+.widget.responsiveslideshow .slideshow-widget .btn-next {
   right: 10px;
   background: image('/images/slideshow-arrow-right.png') no-repeat center right; 
   background-size: contain;   
 }
 
-.widget.responsiveslideshow .slideshow-widget-controls
-{
+.widget.responsiveslideshow .slideshow-widget-controls {
   margin-top: 10px;
-  text-align: center;
-}
-
-.slideshow-empty {
-    padding: 10px;
 }
 
 .widget.responsiveslideshow .slideshow-widget .btn-play
 {
-  display: none;
-  position: absolute;
-  cursor: pointer;
-  z-index: 10;
-  background: image('/images/slideshow-play.png') center no-repeat;
-  background-size: 100%;
-  width: 14%;
-  height: 14%;
-  top: 43%;
-  left: 43%;
-}
-
-.widget.responsiveslideshow .slideshow-widget:hover .btn-play
-{
-  display:block;
+    background: image('/images/slideshow-play.png') center no-repeat;
+    background-size: 100%;
+    border-radius:10px;
+    font-size:0;
+    text-indent: -99999px;
 }
 
 .widget.responsiveslideshow .slideshow-widget:hover .btn-play.pause
 {
-  background: image('/images/slideshow-pause.png') center no-repeat;
-  background-size: 100%;  
+    background: image('/images/slideshow-pause.png') center no-repeat;
+    background-size: 100%;  
 }
 
 .widget.responsiveslideshow .slideshow-widget-controls .dot
 {
-  width: 14px;
-  height: 14px;
-  line-height: 14px;
-  display: inline-block;
-  background: image('/images/slideshow-dot-not-selected.png') center no-repeat;
+    border:none;
+    background:transparent image('/images/slideshow-dot-not-selected.png') center no-repeat;
 }
 
 .widget.responsiveslideshow .slideshow-widget-controls .dot.selected
 {
-  background: image('/images/slideshow-dot-selected.png') center no-repeat;
+    background:transparent image('/images/slideshow-dot-selected.png') center no-repeat;
 }
-
-.widget.responsiveslideshow .slideshow-widget .btn-prev.disabled, .widget.responsiveslideshow .slideshow-widget .btn-next.disabled, .widget.responsiveslideshow .slideshow-widget .btn-play.disabled
-{
-  opacity:0.4;
-  cursor: default;
-}
-
 
 /* ===============================
    IPAD WIDTH
@@ -1381,6 +1397,10 @@ hr.line.align-right {
     font-size: .9em;
   }
 
+  .widget.responsiveslideshow .slideshow-image-list {
+        height:200px;
+  }
+
 }
 
 @media only screen and (max-width : 650px) and (min-width : 481px) {
@@ -1529,6 +1549,16 @@ hr.line.align-right {
     display: none;
   }
 
+  /* SLIDESHOW */
+  .widget.responsiveslideshow .title {
+    padding-bottom:7px;
+  }
+
+  .widget.responsiveslideshow .description {
+    display:none;
+  }
+
+
   /* CLICK TO CALL */
 
   .widget.clicktocall a {
@@ -1624,8 +1654,6 @@ hr.line.align-right {
 .clearfix {
   *zoom: 1;
 }
-
-
 
 #featuregallery .widget.gallery  .gallery-widget {
 	list-style: none;
