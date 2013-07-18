@@ -3,6 +3,8 @@
 	"thumbnail":"pearl.png",
 	"screenshot":"pearl.png",
 	"pageTypes":["home"],
+    "defaultColorSwatch":"Colorful 1",
+    "defaultFontSwatch":"Montserrat",
     "colourSwatches":
     {
         "Swatch 1": [
