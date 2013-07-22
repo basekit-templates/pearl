@@ -55,8 +55,8 @@
        "title": "Raleway",
         "font1": {
             "font-family": "Raleway",
-            "font-size": "36px",
-            "font-weight": "inherit",
+            "font-size": "21px",
+            "font-weight": "500",
             "line-height": "28px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
@@ -88,7 +88,7 @@
         "font5": {
             "font-family": "Raleway",
             "font-size": "14px",
-            "font-weight": "inherit",
+            "font-weight": "500",
             "line-height": "36px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
@@ -112,7 +112,7 @@
         "font8": {
             "font-family": "Raleway",
             "font-size": "40px",
-            "font-weight": "inherit",
+            "font-weight": "500",
             "line-height": "50px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
@@ -120,7 +120,7 @@
         "font9": {
             "font-family": "Raleway",
             "font-size": "24px",
-            "font-weight": "inherit",
+            "font-weight": "500",
             "line-height": "36px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
