@@ -1,8 +1,8 @@
 {
-	"name":"Pearl",
-	"thumbnail":"pearl.png",
-	"screenshot":"pearl.png",
-	"pageTypes":["home"],
+	"name": "Pearl",
+	"thumbnail": "pearl.png",
+	"screenshot": "pearl.png",
+	"pageTypes": ["home"],
     "colourSwatches":
     {
         "Swatch 1": [
@@ -55,7 +55,7 @@
        "title": "Raleway",
         "font1": {
             "font-family": "Raleway",
-            "font-size": "21px",
+            "font-size": "36px",
             "font-weight": "inherit",
             "line-height": "28px",
             "color": "@color-swatch4",
