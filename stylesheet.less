@@ -120,8 +120,8 @@ header {
 }
 
 .widget.companyheader .company-name h1 {
-  font-size:bkscale(@font-swatch1-font-size, 0.6); /* 21.6px  */
-  line-height:bkscale(@font-swatch1-line-height, 0.8); /* 28.8px  */
+  font-size:@font-swatch1-font-size;
+  line-height:@font-swatch1-line-height;
   margin: 0;
   padding: 0;
 }
@@ -256,7 +256,7 @@ footer span {
 .widget.extendednavigation ul {
   float: left;
   padding: 0;
-  margin: 22px 0 0;
+  margin: 19px 0 0;
 }
 
 /* ALIGNMENTS */
@@ -279,6 +279,7 @@ footer span {
   float: left;
   display: block;
   margin-left: 40px;
+  text-align: left;
 }
 
 .widget.extendednavigation ul li:first-child {
@@ -289,7 +290,7 @@ footer span {
   display: block;
   padding: 0;
   font-family:@font-swatch6-font-family;
-  font-size:bkscale(@font-swatch6-font-size, 1.2); /* 12.6px  */
+  font-size:@font-swatch6-font-size;
   font-weight: @font-swatch6-font-weight;
   color: @font-swatch6-color;
   line-height:@font-swatch6-line-height;
@@ -344,7 +345,7 @@ footer span {
   z-index: 500;
   margin-top: 0;
   margin-left: -14px;
-  padding-top: 48px;
+  padding-top: 36px;
 }
 
 .widget.extendednavigation li:hover > ul > li {
@@ -369,6 +370,10 @@ footer span {
   margin-left: 0;
 }
 
+.widget.extendednavigation li:hover > ul > li > a {
+  border-bottom: 0;
+}
+
 .widget.extendednavigation li:hover > ul li .text:hover {
   border-bottom: 0;
   padding-bottom: 0;
@@ -380,7 +385,7 @@ footer span {
    =============================== */
 
  .widget.feature {
-  display: table;
+
 }
 
 .widget.feature .feature-bgimg {
@@ -409,7 +414,7 @@ footer span {
 
 .widget.feature h2 {
   font-family:@font-swatch8-font-family;
-  font-size:bkscale(@font-swatch8-font-size, 0.8); /* 40px  */
+  font-size:@font-swatch8-font-size;
   font-weight: @font-swatch8-font-weight;
   line-height:@font-swatch8-line-height;
   color: @font-swatch8-color;
@@ -420,9 +425,9 @@ footer span {
 
 .widget.feature h3 {
   font-family:@font-swatch9-font-family;
-  font-size:bkscale(@font-swatch9-font-size, 0.6); /* 35px  */
+  font-size:@font-swatch9-font-size;
   font-weight: @font-swatch9-font-weight;
-  line-height:bkscale(@font-swatch9-line-height, 0.55);
+  line-height:@font-swatch9-line-height;
   color: @font-swatch9-color;
   letter-spacing: 1px;
   /*letter-spacing: @font-swatch9-letter-spacing;*/
@@ -681,7 +686,7 @@ footer span {
    GALLERY WIDGET
    =============================== */
 
-.widget.gallery
+/*.widget.gallery
 {
 }
 
@@ -772,7 +777,7 @@ footer span {
 
 .widget.gallery li span.inner .description {
     display:none;
-}
+}*/
 
 /* ===============================
    DIVIDER WIDGET
@@ -970,7 +975,7 @@ hr.line.align-right {
     width: 100%;
     float: left;
     font-family:@font-swatch4-font-family;
-    font-size:bkscale(@font-swatch4-font-size, 0.8);
+    font-size:font-swatch4-font-size;
     font-weight:@font-swatch4-font-weight;
     line-height:@font-swatch4-line-height;
     color:@font-swatch4-color;
@@ -1266,10 +1271,6 @@ hr.line.align-right {
   .widget.companyheader .company-name {
     text-align: center;
     width: 100%;
-  }
-
-  .widget.companyheader .company-name h1 {
-    font-size:bkscale(@font-swatch1-font-size, 0.8);
   }
 
   .widget.companyheader .logo {
@@ -1765,3 +1766,6 @@ hr.line.align-right {
        -o-transition-property:      -o-transform, opacity;
           transition-property:         transform, opacity;
 }
+
+
+
