@@ -1,10 +1,7 @@
 {
-	"name":"Pearl",
-	"thumbnail":"pearl.png",
-	"screenshot":"pearl.png",
-	"pageTypes":["home"],
-    "defaultColorSwatch":"Colorful 1",
-    "defaultFontSwatch":"Raleway",
+    "name":"Pearl",
+    "thumbnail":"pearl.png",
+    "screenshot":"pearl.png",
     "colorSwatches":
     {
         "Swatch 1": {
@@ -57,15 +54,15 @@
        "title": "Raleway",
         "font1": {
             "font-family": "Raleway",
-            "font-size": "21px",
+            "font-size": "30px",
             "font-weight": "500",
-            "line-height": "28px",
+            "line-height": "36px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font2": {
             "font-family": "Raleway",
-            "font-size": "24px",
+            "font-size": "28px",
             "font-weight": "inherit",
             "line-height": "36px",
             "color": "@color-swatch4",
@@ -73,7 +70,7 @@
         },
         "font3": {
             "font-family": "Raleway",
-            "font-size": "18px",
+            "font-size": "22px",
             "font-weight": "inherit",
             "line-height": "28px",
             "color": "@color-swatch4",
@@ -91,13 +88,13 @@
             "font-family": "Raleway",
             "font-size": "14px",
             "font-weight": "500",
-            "line-height": "36px",
-            "color": "@color-swatch4",
+            "line-height": "28px",
+            "color": "@color-swatch5",
             "letter-spacing": "inherit"
         },
         "font6": {
             "font-family": "Raleway",
-            "font-size": "15px",
+            "font-size": "13px",
             "font-weight": "600",
             "line-height": "28px",
             "color": "@color-swatch6",
