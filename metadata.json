@@ -1,7 +1,7 @@
 {
-    "name":"Pearl",
-    "thumbnail":"pearl.png",
-    "screenshot":"pearl.png",
+	"name":"Pearl",
+	"thumbnail":"pearl.png",
+	"screenshot":"pearl.png",
     "colorSwatches":
     {
         "Swatch 1": {
@@ -15,38 +15,38 @@
         },
         "Swatch 2": {
             "color1":"#ffffff",
-            "color2":"#ff634d",
-            "color3":"#ff634d",
-            "color4":"#313131",
-            "color5":"#b6ccca",
-            "color6":"#313131",
+            "color2":"#fad247",
+            "color3":"#ff563e",
+            "color4":"#1b3942",
+            "color5":"#b4bec7",
+            "color6":"#434f5b",
             "color7":"#ffffff"
         },
         "Swatch 3": {
             "color1":"#ffffff",
-            "color2":"#72d0eb",
-            "color3":"#f78e25",
-            "color4":"#102e38",
-            "color5":"#adc1c8",
-            "color6":"#357a91",
+            "color2":"#71d36b",
+            "color3":"#fa9245",
+            "color4":"#272a27",
+            "color5":"#b4bec7",
+            "color6":"#454f45",
             "color7":"#ffffff"
         },
         "Swatch 4": {
             "color1":"#ffffff",
-            "color2":"#5e8360",
-            "color3":"#6c698b",
-            "color4":"#474d47",
-            "color5":"#bebec0",
-            "color6":"#555756",
+            "color2":"#f67f6e",
+            "color3":"#84d1cb",
+            "color4":"#3a3838",
+            "color5":"#b4bec7",
+            "color6":"#3a3838",
             "color7":"#ffffff"
         },
         "Swatch 5": {
             "color1":"#ffffff",
-            "color2":"#f28533",
-            "color3":"#cdd62d",
-            "color4":"#22304b",
+            "color2":"#919aa2",
+            "color3":"#70acde",
+            "color4":"#2f353e",
             "color5":"#b4bec7",
-            "color6":"#22304b",
+            "color6":"#434f5b",
             "color7":"#ffffff"
         }
     },
@@ -62,7 +62,7 @@
         },
         "font2": {
             "font-family": "Raleway",
-            "font-size": "28px",
+            "font-size": "24px",
             "font-weight": "inherit",
             "line-height": "36px",
             "color": "@color-swatch4",
@@ -70,7 +70,7 @@
         },
         "font3": {
             "font-family": "Raleway",
-            "font-size": "22px",
+            "font-size": "18px",
             "font-weight": "inherit",
             "line-height": "28px",
             "color": "@color-swatch4",
@@ -89,7 +89,7 @@
             "font-size": "14px",
             "font-weight": "500",
             "line-height": "28px",
-            "color": "@color-swatch5",
+            "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font6": {
@@ -98,7 +98,7 @@
             "font-weight": "600",
             "line-height": "28px",
             "color": "@color-swatch6",
-            "color-hover": "@color-swatch6",
+            "color-hover": "lighten(@color-swatch6,20%)",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch3",
             "background-color-hover": "@color-swatch3"
@@ -110,15 +110,15 @@
             "line-height": "26px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit",
-            "background-color": "@color-swatch2",
-            "background-color-hover": "@color-swatch7"
+            "background-color": "@color-swatch3",
+            "background-color-hover": "@color-swatch2"
         },
         "font8": {
             "font-family": "Raleway",
             "font-size": "40px",
             "font-weight": "500",
             "line-height": "50px",
-            "color": "@color-swatch1",
+            "color": "@color-swatch3",
             "letter-spacing": "inherit"
         },
         "font9": {
