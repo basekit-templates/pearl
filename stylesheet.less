@@ -150,14 +150,21 @@ header {
 .widget.companyname {
   display: block;
   float: left;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
-.widget.companyname h1 {
-  margin: 0;
-  padding: 0;
-  letter-spacing: -1px;
-  font-size: bkscale(@font-swatch1-font-size,0.8);
+.widget.companyname a {
+  font-family:@font-swatch10-font-family;
+  font-weight: @font-swatch1-font-weight;
+  color:@font-swatch10-color;
+  line-height:@font-swatch10-line-height;
+  letter-spacing: @font-swatch10-letter-spacing;
+  font-size: @font-swatch10-font-size;
+}
+
+.widget.companyname a:hover {
+  cursor: pointer;
+  text-decoration: none;
 }
 
 /* LOGO */
