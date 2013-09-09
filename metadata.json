@@ -2,6 +2,11 @@
 	"name":"Pearl",
 	"thumbnail":"pearl.png",
 	"screenshot":"pearl.png",
+     "tags": {
+        "en": ["minimal", "clean", "business"],
+        "es": ["minimalista", "limpio", "corporativo"],
+        "br": ["minimalista", "limpo", "corporativo"]
+    },
     "colorSwatches":
     {
         "Swatch 1": {
