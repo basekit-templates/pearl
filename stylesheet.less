@@ -1,3 +1,5 @@
+@import templatecommon('/paypal.less');
+
 body {
   background-color: @color-swatch1;
   margin: 0;
@@ -588,6 +590,22 @@ footer span {
     font-weight: bold;
 }
 
+/* ===============================
+   PAYPAL BUTTON
+   =============================== */
+
+
+.widget.paypalbuynow .widget.button.paypal {
+   -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+          border-radius: 2px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.4);
+   text-shadow: 0 1px 0px rgba(0,0,0,0.3);
+ }
+
+ .widget.paypalbuynow .widget.button.paypal:hover {
+   background-color: darken(@color-swatch2,5%);
+ }
  
 
 /* ===============================
