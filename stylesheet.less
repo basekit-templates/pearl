@@ -45,6 +45,9 @@ h2
   line-height:@font-swatch2-line-height;
   color: @font-swatch2-color;
   letter-spacing: @font-swatch2-letter-spacing;
+  a {
+    font-size: @font-swatch2-font-size;
+  }
 }
 
 h3
@@ -96,6 +99,7 @@ blockquote {
   font-weight:@font-swatch5-font-weight;
   line-height:@font-swatch5-line-height;
   color:@font-swatch5-color;
+  border-radius: 3px;
 }
 
 blockquote:before {
@@ -106,7 +110,73 @@ blockquote:before {
   line-height:.1em;
   margin-right:.1em;
   vertical-align:-.4em;
+  top: 24px;
+  left: 2px;
 }
+
+/* ===============================
+   BLOG
+   =============================== */
+
+.blog-post-feature-image-wrap {
+	line-height: 0;
+	background-size: cover;
+	background-position: center;
+	border: 1px solid @color-swatch2;
+	width: 100%;
+	height: 250px;
+	margin-bottom: 10px;
+	img {
+		display: none;
+	}
+}
+
+.blog-post-item {
+	padding-bottom: 20px;
+}
+
+input[type="search"]::-webkit-search-decoration {
+	display: none;
+}
+
+.blog-search-form {
+	label {
+		display: block;
+	}
+}
+
+/* ===============================
+   MENU
+   =============================== */
+
+.menu-item-image-wrap {
+	width: 100%;
+	height: 200px;
+	border: 1px solid @color-swatch2;
+	background-size: cover;
+	background-position: center;
+	img {
+		display: none;
+	}
+}
+
+.menu .menu-items li.menu-item-promoted {
+	padding: 8px 14px;
+	background: fadeout(@color-swatch2, 90%);
+}
+
+.menu-item-nutritional-title {
+	color: darken(@color-swatch2, 25%);	
+}
+.dietary-icon {
+	color: darken(@color-swatch2, 25%);
+	text-decoration: underline;
+}
+
+.menu-subsection {
+	background: fadeout(@color-swatch2, 90%);
+}
+
 
 /* ===============================
    CUSTOM CSS
@@ -122,7 +192,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 /* DEAFULT PAGE TYPES */
 
-.bk-pt-default header {
+.bk-pt-default .bk-header {
   border-bottom: 1px solid lighten(@color-swatch5,22%);
 }
 
@@ -135,12 +205,11 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   padding: 40px 0;
 }
 
-
 /* ===============================
    HEADER
    =============================== */
 
-header {
+.bk-header {
   padding: 0;
   background-color: @color-swatch7;
 }
@@ -185,26 +254,26 @@ header {
    FOOTER
    =============================== */
 
-footer {
+.bk-footer {
   padding: 4em 0;
   background-color: lighten(@color-swatch4,2%);
   min-height: 150px;
   color: @color-swatch1;
 }
 
-footer h1, footer h2, footer h3, footer h4 {
+.bk-footer h1, .bk-footer h2, footer h3, .bk-footer h4 {
   color: @color-swatch1;
   padding-bottom: 20px;
 }
 
-footer p {
+.bk-footer p {
   font-family: @font-swatch5-font-family;
   color: lighten(@color-swatch5,10%);
   line-height:@font-swatch5-line-height;
   padding-bottom: 20px;
 }
 
-footer span {
+.bk-footer span {
   color: @color-swatch1;
 }
 
@@ -319,7 +388,7 @@ footer span {
 
 .widget.extendednavigation ul li.folder {
   margin-right: 16px;
-  background-image: image('/images/arrow-down.png');
+  //background-image: image('/images/arrow-down.png');
   background-position: right center;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -1265,12 +1334,15 @@ hr.line.align-right {
   display: block;
   font-family: @font-swatch5-font-family;
   font-size: @font-swatch5-font-size;
-  color: lighten(@color-swatch5,10%);
   line-height:@font-swatch5-line-height;
+  color:@font-swatch5-color;
+}
+.widget.profile a {
+  color: @color-swatch2;
 }
 
 .widget.profile a:hover {
-  color: @color-swatch1;
+  color: darken(@color-swatch2, 10%);
   text-decoration: none;
 }
 
@@ -1335,9 +1407,12 @@ hr.line.align-right {
   outline: none;
 }
 
-.widget.profile form button {
-    padding: 15px 10px;
-    margin: 0;
+.widget.profile form button,
+.widget.signupform button {
+	line-height: 12px;
+	height: 40px;
+	padding: 16px 10px;
+	margin: 0;
     border: 0;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -1401,8 +1476,8 @@ hr.line.align-right {
     letter-spacing: @font-swatch4-letter-spacing;
 }
 
-.widget.signupform fieldset input {
-    height: 42px;
+.widget.signupform fieldset input,
+.blog-search-input {
     width: 42%;
     background-color: lighten(@color-swatch5,22%);
     /*background-color: lighten(@color-swatch5,46%);*/
@@ -1416,11 +1491,17 @@ hr.line.align-right {
           border-radius: 3px;
 }
 
+.widget.signupform fieldset input {
+	height: 41px;
+}
+
 .widget.signupform fieldset input:focus {
   outline: none;
 }
 
-.widget.signupform button {
+.widget.signupform button,
+.blog-search-submit-button {
+	height: 39px;
     padding: 15px 10px;
     margin: 0;
     border: 0;
@@ -1452,6 +1533,12 @@ hr.line.align-right {
 /* ===============================
    SLIDESHOW WIDGET
    =============================== */
+  
+.widget.responsiveslideshow .btn-play.pause:after,
+.widget.responsiveslideshow .btn-play:after {
+  display: none;
+}
+
 .widget.responsiveslideshow .slideshow-image-list {
     height: 300px;
 }
@@ -1551,6 +1638,7 @@ hr.line.align-right {
 
 .widget.responsiveslideshow .slideshow-widget-controls .dot.selected
 {
+	border: none;
     background:transparent image('/images/slideshow-dot-selected.png') center no-repeat;
 }
 
@@ -1560,7 +1648,7 @@ hr.line.align-right {
 
 @media only screen and (max-width: 768px) {
 
-  header {
+  .bk-header {
     padding: 5px 0;
     border-bottom: 0;
   }
@@ -1598,6 +1686,7 @@ hr.line.align-right {
     display: block;
     float: left;
     width: 100%;
+    min-height: 40px;
   }
 
   /* NAV ICON */
@@ -1606,18 +1695,21 @@ hr.line.align-right {
     display: block;
     width: 100%;
     position: absolute;
-    top: -5px;
-  }
-
-    .widget .extendednavigation a.pull:after {
-    content:"";
-    background: image('/images/nav-icon.png') no-repeat;
+    top: 0;
+    right: 0;
     width: 30px;
     height: 30px;
+  }
+
+  .widget .extendednavigation a.pull:after {
+    content:"";
+    background: image('/images/nav-icon.png') no-repeat center;
+    width: 100%;
+    height: 100%;
     display: inline-block;
     position: absolute;
-    right: 15px;
-    top: -48px;
+    right: 0;
+    top: 0;
   }
 
     /* NAV */
@@ -1831,7 +1923,7 @@ hr.line.align-right {
 
    .widget.responsiveslideshow .slideshow-image-list, 
   .widget.responsiveslideshow .slideshow-widget {
-    height:300px;
+    height:200px;
   }
 
   
@@ -1954,6 +2046,14 @@ hr.line.align-right {
 	#featuregallery .widget.gallery .gallery-widget li {
 		width: 96%;
 	}
+    .widget.responsiveslideshow .slideshow-image-list.crop span.inner.square,
+    .widget.responsiveslideshow .slideshow-image-list.crop span.inner.portrait,
+    .widget.responsiveslideshow .slideshow-image-list.crop span.inner.landscape {
+	    height: 200px;
+    }
+    .widget.responsiveslideshow {
+	    min-height: 100px;
+    }
 }
 
 /* Animation for isotope moves */

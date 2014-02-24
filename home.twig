@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<header>
+<header class="bk-header">
     <div class="wrapper clearfix">
         <div class="companyheader clearfix">
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
@@ -12,7 +12,7 @@
     </div>
 </header>
 
-<section>
+<section class="bk-section">
     {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
 </section>
 
@@ -20,7 +20,7 @@
     {{zone('main')|raw}}
 </div>
 
-<footer>
+<footer class="bk-footer">
     <div class="wrapper clearfix">
         <div class="responsivecolumns columns-two-50-50">
             <div class="column columns-two-left">
