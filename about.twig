@@ -2,36 +2,27 @@
 
 {% block content %}
 
+<div class="bk-pt-default">
+
 <header class="bk-header">
     <div class="wrapper clearfix">
         <div class="companyheader clearfix">
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
+            {{widget('companyname', 'companyname', {"business": "Pearl"})|raw}}
         </div>
         {{widget('extendednavigation', 'navigationheader', {})|raw}}
     </div>
 </header>
 
-<section class="bk-section">
-    {{widget('feature', 'featurehome', {"header": "profile", "strapline":"profile", "buttonText":"Lorem Ipsum","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
-</section>
-
 <div class="main wrapper clearfix">
-    {{zone('main')|raw}}
+	{{zone('main')|raw}}
 </div>
 
 <footer class="bk-footer">
     <div class="wrapper clearfix">
         <div class="responsivecolumns columns-two-50-50">
             <div class="column columns-two-left">
-                {{widget('content', 'footercolumn1content1', {"content":'<h2>Lorem Ipsum</h2>'})|raw}}
-
-                {% if profile.companydescription|length > 0 %}  
-                   {{widget('profile', 'footercolumn1profilecompanydescription', { 'profileType':'companydescription', 'companydescription':'profile'})|raw}}
-                {% else %}
-                    {{widget('content', 'footercolumn1content2', {"content":'<p>Integer a Tortor dui nullam nec antemi morbi sodales urna sit amet mauris. Proin sagittis, velit eget molestie luctus, magna leo elemen.</p>'})|raw}}
-                {% endif %}
-
+                {{widget('content', 'footercolumn1content1', {"content":"<h2>Lorem Ip Soda</h2><p>Integer a Tortor Dui. Nullam nec ante mi. Morbi sodales urna sit amet mauris elementum quis rutrum lacus gravida. Proin feugia libero quis.</p>"})|raw}}
                 {{widget('profile', 'footercolumn1profilesocialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
             </div>
             <div class="column columns-two-right">
@@ -43,5 +34,7 @@
         </div>
     </div>
 </footer>
+
+</div>
 
 {% endblock %}
