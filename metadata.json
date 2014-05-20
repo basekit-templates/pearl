@@ -2,6 +2,7 @@
 	"name":"Pearl",
 	"thumbnail":"pearl.png",
 	"screenshot":"pearl.png",
+	"templateType":"standard",
     "tags": {
     "en": ["professional", "clean", "business", "modern", "colorful", "colourful", "stylish", "fresh", "studio", "music", "media", "young", "flexible"],
     "es": ["profesional", "limpio", "corporativo", "moderno", "colorido", "estilo", "fresco", "estudio", "música", "comunicacion", "joven", "flexible"],
