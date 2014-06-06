@@ -301,7 +301,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 .widget.extendednavigation ul li {
   float: left;
   display: block;
-  text-align: left!important;
   border: none;
 }
 
@@ -357,7 +356,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 .widget.extendednavigation li:hover > ul > li {
   display: block;
   width: 100%;
-  text-align: left;
   padding: 0 30px 0;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
@@ -1702,6 +1700,10 @@ hr.line.align-right {
     max-height: 220px;
     font-size:bkscale(@font-swatch5-font-size,0.9);
     line-height:bkscale(@font-swatch5-line-height,0.9);
+  }
+  .widget .extendednavigation ul.align-right li.folder:after {
+    left: 5px;
+    right: inherit;
   }
 
 }
