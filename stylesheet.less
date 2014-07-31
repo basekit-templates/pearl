@@ -616,6 +616,17 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    GALLERY WIDGET
    =============================== */
 
+.gallery {
+  .inner {
+    background-color: @color-swatch1;
+    .title, .description {
+      color: @color-swatch4;
+    }
+  }
+}
+
+
+
 .widget.gallery
 {
   
@@ -638,35 +649,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 }
 
 
-.widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    margin-bottom: -310px;
-    max-height: 284px;
-    background:@color-swatch1;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    text-align: center;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-    font-family:@font-swatch5-font-family;
-    font-size:@font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height:@font-swatch5-line-height;
-    color:@color-swatch1;
-    letter-spacing: @font-swatch5-letter-spacing;
-}
-.widget.gallery li span.inner:hover .title {
-   margin-bottom: 0;
-}
 
-.widget.gallery li span.inner .description {
-  display: none;
-}
 
 .widget.gallery li span.inner a {
     position: absolute;
@@ -1313,11 +1296,7 @@ hr.line {
 
    /* GALLERY */
 
-  .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
-    max-height: 220px;
-    font-size:bkscale(@font-swatch5-font-size,0.9);
-    line-height:bkscale(@font-swatch5-line-height,0.9);
-  }
+
   .widget .extendednavigation ul.align-right li.folder:after {
     left: 5px;
     right: inherit;
@@ -1411,14 +1390,9 @@ hr.line {
   
    /* GALLERY */
 
-  .widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
-    max-height: 150px;
-  }
 
-  .widget.gallery p
-  {
-    padding: 10px;
-  }
+
+
 
   /* Smartphone view: 1 tile */
   .widget.gallery li {
