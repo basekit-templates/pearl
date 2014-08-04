@@ -32,7 +32,8 @@
 
 .widget.menu {
 	.main {
-		
+		width: 100%;
+		margin: 0;
 		
 		padding-bottom: 70px;
 		margin-bottom: 70px;
@@ -77,19 +78,13 @@
 		-moz-column-gap: 70px;
 		-webkit-column-gap: 70px;
 		@media @bp-menu-compact {
-			padding: 40px 40px 0 40px;
 			column-gap: 40px;
 			-moz-column-gap: 40px;
 			-webkit-column-gap: 40px;
 		}
-		@media @mobile {
-			padding: 12px;
-		}
 	}
 
-	
-
-	
+		
 	// MENU ITEM
 	.menu-item {
 		
@@ -220,12 +215,7 @@
 	.menu-subsection {
 		padding: 10px;
 		background: fadeout(@color-swatch2, 90%);
-		@media @bp-menu-compact {
-			padding: 0 40px;	
-		}
-		@media @mobile {
-			padding: 0 16px;
-		}
+		
 		.menu-subsection-wrapper {
 			
 
