@@ -146,6 +146,8 @@
 // Widget: e-com Product List
 
 .widget.ecomproductslist {
+	margin-left: 0;
+	width: auto;
 	
 	.ecom-productslist-products {
 
@@ -275,7 +277,7 @@
 
 		.productlist-item-count {
 			text-align: center;
-			color: fade(@color-swatch5, 60%);
+			color: @color-swatch5;
 			font-size: bkscale(@font-swatch5-font-size, 0.8);
 			margin: 1em 0;
 		}
@@ -841,8 +843,8 @@
 						border: none;
 						cursor: pointer;
 						padding: 0;
+						background-color: @color-swatch3;
 						color: @color-swatch1;
-						background-color: @color-swatch2;
 						position: absolute;
 						top: 0;
 						width: 40px;
@@ -860,11 +862,11 @@
 						}
 
 						&.js-remove {
-							border-radius: 50px 0 0 50px;
+							border-radius: 5px 0 0 5px;
 							left: 0;
 						}
 						&.js-add {
-							border-radius: 0 50px 50px 0;
+							border-radius: 0 5px 5px 0;
 							right: 0;
 						}
 					}
