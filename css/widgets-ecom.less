@@ -6,9 +6,9 @@
 .widget.ecombasket {
 	
 	.ecombasket-pull {
-		width: auto;
 		height: (@font-swatch7-font-size * 3.5);
 		line-height: (@font-swatch7-font-size * 3.5);
+		padding: 0;
 		.basket-count, p {
 			font-weight: 400;
 			padding: 0;
@@ -21,7 +21,7 @@
 
 
 	&.show-content .ecombasket-list-container {
-		background-color: lighten(@color-swatch5,46%);
+		background-color: fade(@color-swatch2,10%);
 		padding: 16px;
 		border-radius: 3px;
 		position: relative;
@@ -43,7 +43,7 @@
 			height: 0;
 			border-style: solid;
 			border-width: 0 20.5px 27px 20.5px;
-			border-color: transparent transparent lighten(@color-swatch5,46%) transparent;
+			border-color: transparent transparent fade(@color-swatch2,10%) transparent;
 		}
 	}
 
@@ -104,6 +104,7 @@
 						padding: 0 0.6em;
 						border-radius: 3px;
 						line-height: 1.4;
+						border: none;
 						&:hover {
 							background-color: darken(@color-swatch2, 10%);
 						}
@@ -128,7 +129,7 @@
 				}
 			}
 		}
-		.ecombasket-checkout-wrap {
+		.ecombasket-summary-wrap {
 			float: right;
 			margin: 0;
 			@media only screen and (max-width : 460px) {
@@ -821,10 +822,8 @@
 				.basket-summary-quantitybtn {
 					background-color: transparent;
 					margin: 0;
-					position: absolute;
+					position: relative;
 					width: 150px;
-					right: 20px;
-					top: 50px;
 					height: 40px;
 					@media @bp-checkout-compact {
 						position: relative;
