@@ -918,12 +918,21 @@ hr.line {
       background-color:  @color-swatch3;
       color: @color-swatch1;
       min-width: 30px;
-      top: 0;
-      left: 0;
+      top: 50%;
+      left: 50%;
       width: 60px;
       opacity: .8;
+      margin-top: -30px;
+      margin-left: -30px;
       &:hover {
         opacity: 1;
+      }
+
+      &.pause {
+        opacity: 0.1;
+        &:hover {
+          opacity: 1;
+        }
       }
      
       @media @mobile {
