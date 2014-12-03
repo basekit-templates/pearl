@@ -168,10 +168,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
       -webkit-align-self: auto;
       -ms-flex-item-align: auto;
       align-self: auto;
-
       min-width: 30%;
-
-      
 
       @media @mobile {
         display: block;
@@ -180,10 +177,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
       @media @tablet {
         padding-right: 50px;
         float: left;
-      }
-
-      .widget.companyname {
-        
       }
     }
     .extendednavigation {
@@ -221,6 +214,11 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 .widget.companyname {
   display: inline-block;
   vertical-align: middle;
+  a {
+    @media @mobile {
+      line-height: bkscale(@font-swatch10-line-height, 0.8);
+    }
+  }
 }
 
 
@@ -256,6 +254,9 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
       line-height:@font-swatch5-line-height;
       padding-bottom: 20px;
     } 
+    .bk-profile-address p {
+      padding-bottom: 0;
+    }
     span {
       color: @color-swatch1;
     }
@@ -290,6 +291,9 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     .text {
       color: @color-swatch2;
     }
+  }
+  &:last-child a {
+    padding-right: 0;
   }
 }
 
@@ -331,7 +335,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 .widget.extendednavigation li:hover > ul {
   display: block;
-  width: 46%;
   position: absolute;
   background-color: @color-swatch7;
   /*border: 1px solid lighten(@color-swatch5,35%);*/
@@ -433,6 +436,9 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    =============================== */
 
 .widget.clicktocall {
+  @media @mobile {
+    margin: 10px 0;
+  }
   a, a:hover {
     padding: 0 1.6em;
     padding-left: 50px;
@@ -730,7 +736,7 @@ hr.line {
 
 .widget.twitter {
   background-color: lighten(@color-swatch5,22%);
-   padding: 20px 20px 0 20px;
+   padding: 20px;
   ul.twitter {
     border-radius: 4px;
     li {
@@ -1022,16 +1028,6 @@ hr.line {
     margin-bottom: 1em;
   }
 }
-
-
-/* ===============================
-   TWEET THIS WIDGET
-   =============================== */
-
-.widget.tweet {
-   padding: 14px 0; 
-}
-
 
 
 /* ==================================
