@@ -20,6 +20,17 @@ body {
     margin: 0 5%;
 }
 
+.contactform input, .contactform textarea,
+.widget.profile form fieldset input.email,
+.signupform fieldset input.email,
+.blogsearch input.blog-search-input,
+.widget input[type="text"],
+.widget input[type="email"],
+.productlist-filter .productlist-search input,
+.signupform fieldset input {
+    -webkit-appearance: none;
+}
+
 .widget.content {
   a {
     font-family:@font-swatch2-font-family;
@@ -38,7 +49,7 @@ body {
     padding: 0 0 10px;
   }
 
-  
+
 
   ul, ol, li {
     font-family:@font-swatch5-font-family;
@@ -72,7 +83,7 @@ body {
     vertical-align:-.4em;
     top: 24px;
     left: 2px;
-  } 
+  }
 }
 
 
@@ -253,7 +264,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
       color: lighten(@color-swatch5,10%);
       line-height:@font-swatch5-line-height;
       padding-bottom: 20px;
-    } 
+    }
     .bk-profile-address p {
       padding-bottom: 0;
     }
@@ -387,7 +398,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 .widget.feature h2 span, .widget.feature h3 span {
   display: inline-block;
-  background-color: hsla(hue(@color-swatch4), saturation(@color-swatch4), lightness(lighten(@color-swatch4,10%)), 0.9); 
+  background-color: hsla(hue(@color-swatch4), saturation(@color-swatch4), lightness(lighten(@color-swatch4,10%)), 0.9);
 }
 
 .widget.feature h2 span {
@@ -542,7 +553,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
 
 .widget.gallery {
- 
+
   .inner {
     background-color: @color-swatch1;
     .title, .description {
@@ -660,7 +671,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     .review-link {
       margin-left: 24px;
       font-size: bkscale(@font-swatch5-font-size, 0.8);
-      a { 
+      a {
         background-color: @color-swatch3;
         color: @color-swatch1;
         padding: 0.2em 0.7em;
@@ -777,7 +788,7 @@ hr.line {
           width: (@twitterProfilePicSize * 0.55);
           height: (@twitterProfilePicSize * 0.55);
         }
-        
+
         img {
           width: 100%;
           height: auto;
@@ -831,9 +842,9 @@ hr.line {
     padding-top: 20px;
     padding-bottom: 40px;
     margin-top: 0;
-    -webkit-user-select: none;  
-    -moz-user-select: none;     
-    -ms-user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     @media @mobile {
       padding-top: 5px;
       padding-bottom: 5px;
@@ -862,8 +873,8 @@ hr.line {
     }
   }
   .slideshow-widget {
-    -webkit-user-select: none;  
-    -moz-user-select: none;    
+    -webkit-user-select: none;
+    -moz-user-select: none;
     -ms-user-select: none;
 
     // Buttons prev/next
@@ -883,7 +894,7 @@ hr.line {
         width: 35px;
         height: 35px;
       }
-      
+
       &:after {
         display: block;
         content: "";
@@ -940,7 +951,7 @@ hr.line {
           opacity: 1;
         }
       }
-     
+
       @media @mobile {
         width: 35px;
         height: 35px;
@@ -964,7 +975,7 @@ hr.line {
     left:0;
     right:0;
     top:auto;
-    background-color: fade(@color-swatch1, 90%); 
+    background-color: fade(@color-swatch1, 90%);
     .title, .description {
       display: inline-block;
       float: left;
@@ -977,7 +988,7 @@ hr.line {
       font-family: @font-swatch8-font-family;
       font-size: bkscale(@font-swatch5-font-size, 1.2);
       line-height: bkscale(@font-swatch5-line-height, 1.2);
-    
+
       @media @mobile {
         font-size: bkscale(@font-swatch5-font-size, 0.8);
         line-height: bkscale(@font-swatch5-line-height, 0.8);
@@ -988,7 +999,7 @@ hr.line {
       color: darken(@color-swatch5, 30%);
       font-size: bkscale(@font-swatch5-font-size, 1);
       line-height: bkscale(@font-swatch5-line-height, 1);
-      
+
       @media @mobile {
         font-size: bkscale(@font-swatch5-font-size, 0.7);
         line-height: bkscale(@font-swatch5-line-height, 0.8);
@@ -1066,7 +1077,7 @@ hr.line {
           border-radius: 30px;
 }
 
-.widget.socialicons span a:hover, .widget.profile 
+.widget.socialicons span a:hover, .widget.profile
 .bk-profile-socialicons span a:hover {
     background-color: lighten(@color-swatch4,15%);
 }
@@ -1139,9 +1150,9 @@ hr.line {
 
 // ======= Widget: Sign up form
 .widget.signupform {
- 
 
-  
+
+
   .widget.signupform fieldset {
     padding: 0;
     border: 0;
@@ -1180,7 +1191,7 @@ hr.line {
       -ms-flex-align: center;
       align-items: center;
 
-     
+
 
       label {
         // Flex
@@ -1241,7 +1252,7 @@ hr.line {
     }
   }
 }
-  
+
 
 
 /* ===============================
@@ -1352,11 +1363,11 @@ hr.line {
   /* NAV */
 
   .widget.extendednavigation {
-   
+
   }
 
   .widget .extendednavigation {
-    
+
 }
 
     /* NAV */
@@ -1364,7 +1375,7 @@ hr.line {
     .widget .extendednavigation ul {
         width: 100%;
         display: none;
-        padding: 20px 0; 
+        padding: 20px 0;
     }
 
     .widget .extendednavigation ul li {
@@ -1496,7 +1507,7 @@ hr.line {
 
 
 
- 
+
 
 
 }
