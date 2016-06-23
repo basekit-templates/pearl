@@ -1,7 +1,7 @@
 {
 	"name":"Pearl",
 	"thumbnail":"pearl.png",
-	"screenshot":"pearl.png",
+	"screenshot":"pearl-screenshot.jpg",
 	"templateType":"standard",
     "pageTypes": ["home"],
     "tags": {
