@@ -1,0 +1,40 @@
+// -----------------------------
+// Migration Styles
+// -----------------------------
+
+
+// Widget Spacing
+// -----------------------------
+
+@site-container: 960px;
+@site-margin: auto;
+
+#page-zones__main > .widget:not(.row),
+.bk-header,
+.bk-footer .wrapper {
+    margin-left: @site-margin;
+    margin-right: @site-margin;
+    max-width: @site-container;
+}
+
+#page-zones__main > .widget:not(.row) {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+#page-zones__main > .row + .widget:not(.row) {
+    margin-top: 30px;
+}
+#page-zones__main > .widget:not(.row):first-child {
+    margin-top: 30px;
+}
+
+
+
+// Other Styles
+// -----------------------------
+
+
+.main {
+    padding: 0;
+}
