@@ -475,10 +475,8 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    =============================== */
 
 
-.widget.content
-{
+.widget.content {
     padding: 0;
-    overflow: hidden;
 }
 
 .widget.content span.expand
@@ -500,8 +498,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 }
 
 .widget.content span.expand:hover,
-.widget.content span.expand:focus
-{
+.widget.content span.expand:focus {
     cursor: pointer;
     background-color: darken(@color-swatch3,5%);
 }
@@ -1531,4 +1528,5 @@ hr.line {
 }
 
 
-@import "@{templateLocal}/migration.less";
+@import "@{templateLocal}/migration/migration.less";
+@import "@{templateLocal}/migration/migration-colour.less";
