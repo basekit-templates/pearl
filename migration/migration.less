@@ -1,0 +1,61 @@
+// -----------------------------
+// Migration Styles
+// -----------------------------
+
+
+// Site Layout and Spacing
+// -----------------------------
+
+@site-container: 960px;
+@site-margin: auto;
+
+#page-zones__main > .widget:not(.row),
+.canvas,
+.bk-header .wrapper,
+.bk-footer .wrapper {
+    margin-left: @site-margin;
+    margin-right: @site-margin;
+    max-width: @site-container;
+}
+.bk-header .wrapper,
+.bk-footer .wrapper {
+    width: 90%;
+}
+.row .row--width-contained .row__container {
+    max-width: @site-container;
+}
+
+#page-zones__main > .widget:not(.row) {
+    width: 90%;
+    margin-bottom: 20px;
+    margin-top: 0;
+}
+#page-zones__main > .widget:not(.row):first-child,
+#page-zones__main > .row + .widget:not(.row),
+#page-zones__main + .row,
+#page-zones__main > .row:first-child:not(.style--light) {
+    margin-top: 50px;
+    
+    @media @tablet {
+        margin-top: 5%;
+    }
+}
+
+.main,
+.bk-pt-default .main {
+    padding: 0;
+}
+
+// Default page
+.bk-pt-default #page-zones__main > .row:first-child {
+    margin-top: 0;
+}
+
+
+
+
+// Widgets
+// -----------------------------
+
+
+
