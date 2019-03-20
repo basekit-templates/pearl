@@ -10,6 +10,7 @@
 @site-margin: auto;
 
 #page-zones__main > .widget:not(.row),
+.empty-zone,
 .canvas,
 .bk-header .wrapper,
 .bk-footer .wrapper {
@@ -27,9 +28,8 @@
 
 #page-zones__main > .widget:not(.row) {
     width: 90%;
-    margin-bottom: 20px;
-    margin-top: 0;
 }
+
 #page-zones__main > .widget:not(.row):first-child,
 #page-zones__main > .row + .widget:not(.row),
 #page-zones__main + .row,
@@ -37,7 +37,7 @@
     margin-top: 50px;
     
     @media @tablet {
-        margin-top: 5%;
+        margin-top: 25px;
     }
 }
 
