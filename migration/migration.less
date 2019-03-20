@@ -1,6 +1,9 @@
+
 // -----------------------------
 // Migration Styles
 // -----------------------------
+
+
 
 
 // Site Layout and Spacing
@@ -9,8 +12,10 @@
 @site-container: 960px;
 @site-margin: auto;
 
+
 #page-zones__main > .widget:not(.row),
 .empty-zone,
+#page-zones__main:empty,
 .canvas,
 .bk-header .wrapper,
 .bk-footer .wrapper {
@@ -18,39 +23,55 @@
     margin-right: @site-margin;
     max-width: @site-container;
 }
-.bk-header .wrapper,
-.bk-footer .wrapper {
-    width: 90%;
-}
-.row .row--width-contained .row__container {
-    max-width: @site-container;
-}
 
-#page-zones__main > .widget:not(.row) {
-    width: 90%;
-}
-
-#page-zones__main > .widget:not(.row):first-child,
-#page-zones__main > .row + .widget:not(.row),
-#page-zones__main + .row,
-#page-zones__main > .row:first-child:not(.style--light) {
-    margin-top: 50px;
-    
-    @media @tablet {
-        margin-top: 25px;
-    }
-}
 
 .main,
 .bk-pt-default .main {
     padding: 0;
 }
 
-// Default page
-.bk-pt-default #page-zones__main > .row:first-child {
-    margin-top: 0;
+
+.empty-zone,
+#page-zones__main:empty {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
+
+.bk-header .wrapper,
+.bk-footer .wrapper {
+    width: 90%;
+}
+
+
+.row .row--width-contained .row__container {
+    max-width: @site-container;
+}
+
+
+#page-zones__main > .widget:not(.row) {
+    width: 90%;
+}
+
+
+#page-zones__main > .widget:not(.row):first-child,
+#page-zones__main > .row + .widget:not(.row) {
+    margin-top: 40px;
+    
+    @media @tablet {
+        margin-top: 20px;
+    }
+}
+
+
+#page-zones__main > .widget:not(.row):last-child,
+#page-zones__main > .row + .widget:not(.row) {
+    margin-bottom: 40px;
+    
+    @media @tablet {
+        margin-bottom: 20px;
+    }
+}
 
 
 
