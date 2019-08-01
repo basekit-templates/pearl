@@ -4,6 +4,31 @@
 // -----------------------------
 
 
+#migrated-site {
+
+
+// Stylseheet overrides
+// -----------------------------
+
+
+.main.wrapper {
+    width: 100%;
+    margin: 0;
+}
+
+
+.main,
+.bk-pt-default .main {
+    padding: 0;
+}
+
+
+.bk-header .wrapper,
+.bk-footer .wrapper {
+    width: 90%;
+}
+
+
 
 
 // Site Layout and Spacing
@@ -25,21 +50,10 @@
 }
 
 
-.main,
-.bk-pt-default .main {
-    padding: 0;
-}
-
-
+.empty-zone,
 #page-zones__main:empty {
     margin-top: 40px;
     margin-bottom: 40px;
-}
-
-
-.bk-header .wrapper,
-.bk-footer .wrapper {
-    width: 90%;
 }
 
 
@@ -52,14 +66,7 @@
     width: 90%;
 }
 
-.edit #page-zones__main-overlay.empty-zone {
-    margin-top: 40px;
-    margin-bottom: 40px;
-    min-height: 40px;
-    position: relative;
-}
 
-.edit #page-zones__main-overlay + .widget:not(.row),
 #page-zones__main > .widget:not(.row):first-child,
 #page-zones__main > .row + .widget:not(.row) {
     margin-top: 40px;
@@ -68,8 +75,10 @@
         margin-top: 20px;
     }
 }
- 
-#page-zones__main > .widget:not(.row):last-child {
+
+
+#page-zones__main > .widget:not(.row):last-child,
+#page-zones__main > .row + .widget:not(.row) {
     margin-bottom: 40px;
     
     @media @tablet {
@@ -78,9 +87,4 @@
 }
 
 
-
-// Widgets
-// -----------------------------
-
-
-
+}
