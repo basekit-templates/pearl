@@ -1,0 +1,90 @@
+
+// -----------------------------
+// Migration Styles
+// -----------------------------
+
+
+#migrated-site {
+
+
+// Stylseheet overrides
+// -----------------------------
+
+
+.main.wrapper {
+    width: 100%;
+    margin: 0;
+}
+
+
+.main,
+.bk-pt-default .main {
+    padding: 0;
+}
+
+
+.bk-header .wrapper,
+.bk-footer .wrapper {
+    width: 90%;
+}
+
+
+
+
+// Site Layout and Spacing
+// -----------------------------
+
+@site-container: 960px;
+@site-margin: auto;
+
+
+#page-zones__main > .widget:not(.row),
+.empty-zone,
+#page-zones__main:empty,
+.canvas,
+.bk-header .wrapper,
+.bk-footer .wrapper {
+    margin-left: @site-margin;
+    margin-right: @site-margin;
+    max-width: @site-container;
+}
+
+
+.empty-zone,
+#page-zones__main:empty {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.row .row--width-contained .row__container {
+    max-width: @site-container;
+}
+
+
+#page-zones__main > .widget:not(.row) {
+    width: 90%;
+}
+
+
+#page-zones__main > .widget:not(.row):first-child,
+#page-zones__main > .row + .widget:not(.row) {
+    margin-top: 40px;
+    
+    @media @tablet {
+        margin-top: 20px;
+    }
+}
+
+
+#page-zones__main > .widget:not(.row):last-child,
+#page-zones__main > .row + .widget:not(.row) {
+    margin-bottom: 40px;
+    
+    @media @tablet {
+        margin-bottom: 20px;
+    }
+}
+
+
+}

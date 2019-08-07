@@ -1,9 +1,10 @@
 {
-	"name":"Pearl",
-	"thumbnail":"pearl.png",
-	"screenshot":"pearl-screenshot.jpg",
-	"templateType":"standard",
+    "name":"Pearl",
+    "thumbnail":"pearl.png",
+    "screenshot":"pearl-screenshot.jpg",
+    "templateType":"standard",
     "pageTypes": ["home"],
+    "versionTenCompatible": 1,
     "tags": {
     "en": ["professional", "clean", "business", "modern", "colorful", "colourful", "stylish", "fresh", "studio", "music", "media", "young", "flexible"],
     "es": ["profesional", "limpio", "corporativo", "moderno", "colorido", "estilo", "fresco", "estudio", "música", "comunicacion", "joven", "flexible"],
