@@ -12,20 +12,15 @@
 
 
 .main.wrapper {
-    width: 100%;
     margin: 0;
+    max-width: 100%;
+    width: 100%;
 }
 
 
 .main,
 .bk-pt-default .main {
     padding: 0;
-}
-
-
-.bk-header .wrapper,
-.bk-footer .wrapper {
-    width: 90%;
 }
 
 
@@ -41,9 +36,7 @@
 #page-zones__main > .widget:not(.row),
 .empty-zone,
 #page-zones__main:empty,
-.canvas,
-.bk-header .wrapper,
-.bk-footer .wrapper {
+.canvas {
     margin-left: @site-margin;
     margin-right: @site-margin;
     max-width: @site-container;
