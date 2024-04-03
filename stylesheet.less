@@ -350,7 +350,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   display: block;
   position: absolute;
   background-color: @color-swatch7;
-  /*border: 1px solid lighten(@color-swatch5,35%);*/
   box-shadow: 5px 5px 0px rgba(110, 110, 110, 0.2);
   border-top: 0;
   z-index: 500;
@@ -429,7 +428,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
   line-height:@font-swatch9-line-height;
   color: @font-swatch9-color;
   letter-spacing: 1px;
-  /*letter-spacing: @font-swatch9-letter-spacing;*/
 }
 
 /* FEATURE BUTTON */
@@ -487,9 +485,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     font-size: @font-swatch5-font-size;
     padding: 4px 8px;
     margin: 4px 0;
-    /*-webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;*/
     cursor: pointer;
     display: inline-block;
     .less, .more {
@@ -509,14 +504,11 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
    IMAGE WIDGET
    =============================== */
 
-.widget.image img {
+.widget.image .image {
     display: block;
     max-width: 100%;
     border: 0;
     border-width: 0;
-}
-
-.widget.image {
 }
 
 .widget.image span.image-title {
